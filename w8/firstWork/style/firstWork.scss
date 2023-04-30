@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to left);
+  background-color: black;
+  padding: 0;
+  margin: 0;
+
+  color: white;
+}
+
+// section {
+//   background-color: red;
+// }
+.container {
+  // background-color: green;
+  --variableName: 64px;
+  padding-inline: 32px;
+  max-width: 83rem;
+  // calc(
+  //   1200px + 2 * var(--variableName)
+  // );
+  margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-inline: auto;
+}
+
+// .wrapper {
+//   background-color: blue;
+// }
+
+.logowrapper {
+  font-weight: 700;
+  display: flex;
+  max-width: 80vw;
+
+  &__logo {
+    margin-top: 10px;
+  }
+}
+
+.firstblock {
+  .button {
+    width: 500px;
+    background-color: cornflowerblue;
+    padding: 14px 80px 11px 81px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    &--type-text {
+      width: 500px;
+      background-color: black;
+      padding: 14px 80px 11px 81px;
+      border-radius: 4px;
+      color: white;
+      font-weight: 700;
+      text-align: center;
+      border: 1px solid #ccc;
+      margin-top: 0;
+    }
+  }
+  h1 {
+    align-items: center;
+  }
+  span {
+    font-size: 24px;
+  }
+
+  .title {
+    font-size: 60px;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .container {
+    /* background-color: green; */
+    // $padding-inline-value: 64px;
+    justify-content: left;
+    max-width: 83rem;
+    $padding-inline-value: 5px;
+    max-width: 1328px;
+
+    width: 100%;
+  }
+  .wrapper {
+    /* background-color: blue; */
+    padding-block: 64px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-block: 64px;
+    gap: 24px;
+    align-items: baseline;
+  }
+  @media (width < 35rem) {
+    .button {
+      width: 420px;
+    }
+  }
+}
+
+#hero2 {
+  .main__media {
+    justify-content: space-between;
+    background-image: url("https://assets.coupangplay.com/images/Dec_20_22_Web.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: center;
+    min-width: 0px;
+    background-position: 100%;
+
+    aspect-ratio: 4 / 3;
+    background-image: url("https://assets.coupangplay.com/images/pre-login2-update-13-jan.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  .main__text {
+    text-align: center;
+    padding-left: 30px;
+    h1 {
+      font-size: 32px;
+    }
+    h2 {
+      font-size: 16px;
+    }
+  }
+  .container {
+    /* background-color: green; */
+    // $padding-inline-value: 64px;
+    max-width: 1328px;
+    justify-content: left;
+
+    .wrapper {
+      & > * {
+        flex: 1;
+        // width: calc((100% - $gap-val) / 2);
+      }
+      .picture2 {
+        display: flex;
+        aspect-ratio: 4 / 3;
+      }
+      display: flex;
+      align-items: center;
+      $gap-val: 24px;
+      gap: $gap-val;
+      margin-top: 70px;
+      margin-bottom: 70px;
+    }
+  }
+  @media (width < 57.1875rem) {
+    .container .wrapper {
+      display: block;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 120px;
+    }
+    .main {
+      &__text {
+        margin-bottom: 36px;
+      }
+    }
+    .main__media {
+      margin-inline: auto;
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+svg {
+  fill: white;
+}
+
+// font-size: 17px;
+
+// align-items: center;
+// $gap-val: 24px;
+
+.footer {
+  container-type: inline-size;
+  container-name: footer;
+  font-size: 1rem;
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .footer__extLinkWrap img {
+    width: 45px;
+    height: auto;
+  }
+  a {
+    text-decoration: none;
+    color: dodgerblue;
+  }
+  li {
+    list-style: none;
+  }
+
+  h2 {
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  li {
+    margin-bottom: 0.5rem;
+  }
+  .footer__extLinkWrap {
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  @container footer (width < 62.5rem) {
+    .wrapper {
+      grid-template-columns: 1fr 1fr;
+    }
+    .logo {
+      width: 200px;
+    }
+  }
+}

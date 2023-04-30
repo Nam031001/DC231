@@ -24,22 +24,22 @@
 
 .button {
   width: fit-content;
-  background-color: cornflowerblue;
+  background-color: brown;
   padding: 8px 16px;
-  border-radius: 8px;
+  border-radius: 6px;
   color: white;
   font-weight: 700;
   text-align: center;
-  &--type-text {
-    background-color: unset;
-    color: cornflowerblue;
-    padding-inline: 0;
-  }
+  // &--type-text {
+  //   background-color: unset;
+  //   color: cornflowerblue;
+  //   padding-inline: 0;
+  // }
 }
 
 .nav {
-  background-color: black;
-  color: white;
+  background-color: unset;
+  color: black;
   font-weight: 700;
   container-type: inline-size;
   container-name: nav;
@@ -49,6 +49,8 @@
     justify-content: space-between;
     align-items: baseline;
     padding-block: 12px;
+    .nav__menu {
+    }
   }
   &__menuwrapper {
     display: flex;
@@ -83,6 +85,12 @@
 }
 
 #hero1 {
+  background-image: url(/w8/work/img/A4B6F0A6-2CD1-47C5-9A77-C83A1B9248F2_1_201_a.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+
+  margin-top: 7px;
   text-align: center;
   .button {
     margin-inline: auto;
@@ -158,7 +166,7 @@
 }
 
 .footer {
-  background-color: grey;
+  background-color: brown;
   color: white;
   font-size: 0.875rem;
   container-type: inline-size;
