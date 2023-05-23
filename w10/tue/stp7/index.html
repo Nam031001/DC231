@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>w10 - spt7</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        margin-inline: auto;
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+      }
+      .box {
+        /* // */
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        /* 텍스트 중앙정렬 */
+
+        width: 12.5rem;
+        aspect-ratio: 1/1;
+        background-color: beige;
+        border: 1px solid #000;
+      }
+      .box:hover {
+        background-color: bisque;
+        /* // */
+        transition: background-color 250ms
+          ease-in-out;
+        /* 부드럽게 변환 */
+      }
+      .box--clicked {
+        background-color: cornflowerblue;
+      }
+      .box--clicked:hover {
+        background-color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <script src="js/jsfile.js" defer></script> 
+    안된다-->
+    <div class="container">
+      <div id="box1" class="box">box1</div>
+      <div id="box2" class="box">box2</div>
+      <div id="box3" class="box">box3</div>
+    </div>
+  </body>
+  <!-- <script src="js/jsfile.js"></script>
+    된다 -->
+
+  <!-- html안의 요소를 가져와서 변조하는 명령어 -> body바깥쪽 html안쪽에 위치
+    그 외의 위치에 가야한다면 defer 추가하면 작동됨  -->
+</html>

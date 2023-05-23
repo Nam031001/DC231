@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>w10 - spt4</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        margin-inline: auto;
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+      }
+      .box {
+        /* // */
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        /* 텍스트 중앙정렬 */
+
+        width: 12.5rem;
+        aspect-ratio: 1/1;
+        background-color: beige;
+        border: 1px solid #000;
+      }
+      .box:hover {
+        background-color: bisque;
+        /* // */
+        transition: background-color 250ms
+          ease-in-out;
+        /* 부드럽게 변환 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="box1" class="box">box1</div>
+      <div id="box2" class="box">box2</div>
+      <div id="box3" class="box">box3</div>
+    </div>
+  </body>
+
+  <script>
+    console.log(document);
+    console.log(document.getElementById("box1"));
+    // id만 오기 때문에 하나만 호출됨
+    console.log(
+      document.getElementsByClassName("box")
+    );
+    // 같은 class의 요소들 여러개가 호출됨
+  </script>
+</html>

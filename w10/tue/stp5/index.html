@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>w10 - spt5</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        margin-inline: auto;
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+      }
+      .box {
+        /* // */
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        /* 텍스트 중앙정렬 */
+
+        width: 12.5rem;
+        aspect-ratio: 1/1;
+        background-color: beige;
+        border: 1px solid #000;
+      }
+      .box:hover {
+        background-color: bisque;
+        /* // */
+        transition: background-color 250ms
+          ease-in-out;
+        /* 부드럽게 변환 */
+      }
+      .box--clicked {
+        background-color: cornflowerblue;
+      }
+      .box--clicked:hover {
+        background-color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="box1" class="box">box1</div>
+      <div id="box2" class="box">box2</div>
+      <div id="box3" class="box">box3</div>
+    </div>
+  </body>
+
+  <script>
+    // let abox = document.getElementById("box1");
+    // abox.onclick = function () {
+    //   abox.style =
+    //     "background-color: cornflowerBlue";
+    // };
+
+    // let을 사용, box1을 abox로 선언
+    // box1을 클릭할 시 백그라운드 색을 confloweBlue로 변경 (단 한번 클릭하면 돌아오지 않음)
+
+    let abox = document.getElementById("box1");
+    abox.onclick = function () {
+      // abox를 클릭하면 주는 기능
+      abox.classList.toggle("box--clicked");
+    };
+    // box--clicked라는 속성이 abox(box1)에 있으면 지우고 없으면 추가하라
+  </script>
+</html>
