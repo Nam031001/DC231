@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="style/final.css"
+    />
+    <script
+      src="script/progressBar.js"
+      defer
+    ></script>
+    <script
+      src="script/noHistoryScrollReactBtn.js"
+      defer
+    ></script>
+    <title>final</title>
+    <!-- 슬라이드스타일 -->
+    <style>
+      .slidebox
+        .slidelist
+        .slideitem
+        > a
+        label.prev {
+        left: 20px;
+        background: #333
+          url("./img압축/left-arrow.png") center
+          center / 50% no-repeat;
+      }
+      .slidebox
+        .slidelist
+        .slideitem
+        > a
+        label.next {
+        right: 20px;
+        background: #333
+          url("./img압축/right-arrow.png") center
+          center / 50% no-repeat;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 본작업 -->
+    <div class="section nav">
+      <div class="navWrapper">
+        <div class="nav__logo">
+          <div>
+            <a href="https://www.ghibli.jp/">
+              <img
+                class="logowrapper__logo"
+                src="./img압축/로고.png"
+                alt=""
+                style="max-width: 150px"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="nav__menuwrapper">
+          <div class="nav__menu">소스케</div>
+          <div class="nav__menu">포뇨</div>
+          <div class="nav__menu">후지모토</div>
+          <div class="nav__menu">그랑맘마레</div>
+        </div>
+        <div class="nav__menuwrapper">
+          <div class="nav__menu button">
+            시청하기
+          </div>
+
+          <div class="nav__menu button">
+            더보기
+          </div>
+        </div>
+        <div class="nav__menuwrappe lt680px">
+          <div class="nav__menu">menu</div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="slidebox">
+        <input
+          type="radio"
+          name="slide"
+          id="slide01"
+          checked
+        />
+
+        <input
+          type="radio"
+          name="slide"
+          id="slide02"
+        />
+
+        <input
+          type="radio"
+          name="slide"
+          id="slide03"
+        />
+        <ul class="slidelist">
+          <li class="slideitem">
+            <a>
+              <label
+                for="slide03"
+                class="prev"
+              ></label>
+              <img
+                src="./img압축/표지.jpg"
+                style="width: 100%"
+              />
+
+              <label
+                for="slide02"
+                class="next"
+              ></label>
+            </a>
+          </li>
+          <li class="slideitem">
+            <a>
+              <label
+                for="slide01"
+                class="prev"
+              ></label>
+              <img
+                src="./img압축/표지2.jpg"
+                width="100%"
+              />
+              <label
+                for="slide03"
+                class="next"
+              ></label>
+            </a>
+          </li>
+          <li class="slideitem">
+            <a>
+              <label
+                for="slide02"
+                class="prev"
+              ></label>
+              <img
+                src="./img압축/줄거리4.jpg"
+                style="height: 1020%; width: 100%"
+              />
+              <label
+                for="slide01"
+                class="next"
+              ></label>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="stickyWrapper">
+        <main>
+          <section id="section1">
+            <div class="container"></div>
+            <div class="wrapper">
+              <h2>등장인물</h2>
+              <div class="gallerylist">
+                <ul>
+                  <li>
+                    <div class="a">
+                      <div class="screen">
+                        <div class="bottom">
+                          본명은 브륀힐트. <br />
+                          바다를 벗어나고싶은
+                          물고기 공주님이다.
+                        </div>
+                        <img
+                          src="./img압축/포뇨.jpg"
+                          alt=""
+                          style="
+                            aspect-ratio: 1/1;
+                            object-fit: cover;
+                          "
+                        />
+                      </div>
+                      <div>
+                        <h3>포뇨(ver. 물고기)</h3>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <div class="a">
+                      <div class="screen">
+                        <div class="bottom">
+                          후지모토의 생명의 물을
+                          마시고 <br />
+                          인간이 된 모습이다.
+                        </div>
+                        <img
+                          src="img압축/포뇨 인간.jpg"
+                          alt=""
+                          style="
+                            aspect-ratio: 1 / 1;
+                            object-fit: cover;
+                          "
+                          width="100%"
+                          ;
+                        />
+                      </div>
+                      <div>
+                        <h3>포뇨(ver. 인간)</h3>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <div class="a">
+                      <div class="screen">
+                        <div class="bottom">
+                          포뇨와 만나게 된 6살
+                          남자아이. <br />
+                          포뇨를 좋아한다.
+                        </div>
+                        <img
+                          src="img압축/소스케.jpg"
+                          alt=""
+                          style="
+                            aspect-ratio: 1 / 1;
+                            object-fit: cover;
+                          "
+                          width="100%"
+                          ;
+                        />
+                      </div>
+                      <div>
+                        <h3>소스케</h3>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <div class="a">
+                      <div class="screen">
+                        <div class="bottom">
+                          소스케와 단 둘이
+                          살고있으며 <br />
+                          소스케를 무척 사랑한다
+                        </div>
+                        <img
+                          src="img압축/리사.jpg"
+                          alt=""
+                          style="
+                            aspect-ratio: 1 / 1;
+                            object-fit: cover;
+                          "
+                          width="100%"
+                          ;
+                        />
+                      </div>
+                      <div>
+                        <h3>소스케 엄마(리사)</h3>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <div class="a">
+                      <div class="screen">
+                        <div class="bottom">
+                          본래 인간이었으나 신을
+                          사랑하고, 신이 되었다.
+                          딸들을 끔찍히 아낀다.
+                        </div>
+                        <img
+                          src="img압축/포뇨 아빠.jpg"
+                          alt=""
+                          style="
+                            aspect-ratio: 1 / 1;
+                            object-fit: cover;
+                          "
+                          width="100%"
+                          ;
+                        />
+                      </div>
+                      <div>
+                        <h3>
+                          포뇨 아빠(후지모토)
+                        </h3>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <div class="a">
+                      <div class="screen">
+                        <div class="bottom">
+                          생명의 신으로 인간인
+                          후지모토와 결혼했다.
+                          <br />
+                          인간이 되고자 하는
+                          포뇨의 뜻을 존중한다.
+                        </div>
+                        <img
+                          src="img압축/포뇨엄마.jpg"
+                          alt=""
+                          style="
+                            aspect-ratio: 1 / 1;
+                            object-fit: cover;
+                          "
+                          width="100%"
+                          ;
+                        />
+                      </div>
+                      <div>
+                        <h3>
+                          포뇨 엄마(그랑 맘마레)
+                        </h3>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section id="section2">
+            <div class="wrapper">
+              <h2>ost/예고편</h2>
+              <iframe
+                id="music"
+                src="https://www.youtube.com/embed/3EP8qjwfNQo"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                id="movie"
+                src="https://www.youtube.com/embed/lSYGyrlFoeA"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+
+          <section id="section3">
+            <div class="wrapper">
+              <h2 style="margin-bottom: 40px">
+                스토리
+              </h2>
+            </div>
+            <ul>
+              <li>
+                <div
+                  class="a"
+                  style="width: 110%"
+                >
+                  <div class="screen1">
+                    <div class="top">
+                      <h2>1.</h2>
+                    </div>
+                    <div class="bottom">
+                      <p>
+                        바다생활에 싫증이 난
+                        포뇨는 바닷속 쓰레기를
+                        <br />
+                        수거하는 그물에 휘말려 한
+                        유리병에 <br />
+                        갇히는 위기를 맞게 된다.
+                        유리병에 낀 채로 <br />
+                        해변가로 떠밀려온 포뇨를
+                        소스케가 우연히<br />
+                        발견하게 되어 포뇨를
+                        병에서 빼내주고 <br />
+                        집과 어린이집으로
+                        데려간다. 요양원의
+                        노인들은 <br />
+                        인면어를 데리고 오면
+                        쓰나미가 온다며
+                        두려워하지만<br />
+                        소스케는 이를 신경쓰지
+                        않는다.
+                      </p>
+                    </div>
+                    <img
+                      src="./img압축/줄거리1.jpg"
+                      alt=""
+                      style="
+                        background-position: 40%;
+                        background-repeat: no-repeat;
+                        height: auto;
+                        right: 100px;
+
+                        background-size: cover;
+                        width: 100%;
+                      "
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section id="section4">
+            <ul>
+              <li>
+                <div
+                  class="a"
+                  style="width: 110%"
+                >
+                  <div class="screen1">
+                    <div class="top">
+                      <h2>2.</h2>
+                    </div>
+                    <div class="bottom">
+                      <p>
+                        그러나 곧 포뇨의 아버지인
+                        후지모토는 <br />
+                        강제로 포뇨를 다시
+                        바닷속으로 데려간다.
+                        <br />
+                        포뇨는 바다에서 사는 것을
+                        완강히 거부하고 <br />
+
+                        후지모토가 자리를 비운
+                        사이 여동생들의 도움으로
+                        <br />
+                        집에서 탈출하고 후지모토가
+                        모아놓은 에너지를 <br />
+                        모두 마신 후, 그 힘으로
+                        인간이 되어
+                        <br />
+                        지상에 있는 소스케에게
+                        찾아간다.
+                      </p>
+                    </div>
+                    <img
+                      src="./img압축/줄거리2.jpg"
+                      alt=""
+                      style="
+                        background-position: 40%;
+                        background-repeat: no-repeat;
+                        height: auto;
+                        right: 100px;
+
+                        background-size: cover;
+                        width: 100%;
+                      "
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section id="section5">
+            <ul>
+              <li>
+                <div
+                  class="a"
+                  style="width: 110%"
+                >
+                  <div class="screen1">
+                    <div class="top">
+                      <h2>3.</h2>
+                    </div>
+                    <div class="bottom">
+                      <p>
+                        다시 만나게 된 둘은 함께
+                        집에서 밥을 먹고 <br />
+                        차를 마시는 등 행복한
+                        시간을 보내지만 <br />
+                        포뇨가 지상까지 오기 위해
+                        일으킨 파도가 <br />
+                        쓰나미로 몰려오게 되었고
+                        요양원에서 일을 했던
+                        <br />
+                        소스케의 어머니는 노인들이
+                        걱정되어 <br />
+                        아이들을 집에 두고 혼자서
+                        차를 끌고 요양원으로
+                        향한다.
+                      </p>
+                    </div>
+                    <img
+                      src="./img압축/줄거리3.jpg"
+                      alt=""
+                      style="
+                        background-position: 40%;
+                        background-repeat: no-repeat;
+                        height: auto;
+                        right: 100px;
+
+                        background-size: cover;
+                        width: 100%;
+                      "
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section id="section6">
+            <ul>
+              <li>
+                <div
+                  class="a"
+                  style="width: 110%"
+                >
+                  <div class="screen1">
+                    <div class="top">
+                      <h2>4.</h2>
+                    </div>
+                    <div class="bottom">
+                      <p>
+                        다음날 아침, 마을 전체가
+                        물에 잠기게 된다. <br />
+                        혼자 나간 어머니가 걱정이
+                        된 소스케는 포뇨의 <br />
+                        마법으로 만든 배를 타고
+                        어머니를 찾으러간다.
+                        <br />밖에 나가자
+                        마을사람들이 배를 타고
+                        마을의 언덕쪽으로
+                        <br />향하고 있었고
+                        소스케와 포뇨는 사람들과
+                        인사를 나눈다. <br />
+                        그러나 포뇨는 터널을
+                        지나가던 중 힘을 잃고
+                        <br />
+                        다시 금붕어로 변해버린다.
+                      </p>
+                    </div>
+                    <img
+                      src="./img압축/줄거리4.jpg"
+                      alt=""
+                      style="
+                        background-position: 40%;
+                        background-repeat: no-repeat;
+                        height: auto;
+                        right: 100px;
+
+                        background-size: cover;
+                        width: 100%;
+                      "
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section id="section7">
+            <ul>
+              <li>
+                <div
+                  class="a"
+                  style="width: 110%"
+                >
+                  <div class="screen1">
+                    <div class="top">
+                      <h2>5.</h2>
+                    </div>
+                    <div class="bottom">
+                      <p>
+                        소스케의 앞에 후지모토가
+                        나타나 모두가 있는
+                        곳으로<br />
+                        가자며 소스케를 끌고간다.
+                        그곳에는 정말로 어머니와
+                        <br />
+                        모두가 있었다. "포뇨가
+                        인어라도 상관없느냐"고
+                        묻는<br />
+                        포뇨 어머니의 질문에
+                        소스케는 그렇다고
+                        대답한다.
+                        <br />
+                        그러자 포뇨의 어머니는
+                        포뇨에게 입맞춤을 하면<br />
+                        인간이 되는 마법을
+                        걸고서는 모두를 지상으로
+                        보내준다.
+                        <br />
+                        그리고 지상에 온 소스케와
+                        포뇨는 입맞춤을 하고
+                        <br />
+                        포뇨는 인간으로 변하며
+                        끝이 난다.
+                      </p>
+                    </div>
+                    <img
+                      src="./img압축/줄거리 마지막.jpg"
+                      alt=""
+                      style="
+                        background-position: 40%;
+                        background-repeat: no-repeat;
+                        height: auto;
+                        right: 100px;
+
+                        background-size: cover;
+                        width: 100%;
+                      "
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </main>
+        <aside>
+          <h2 class="hide">
+            links to each pages
+          </h2>
+          <ol>
+            <a href="#section1">
+              <li>charecter</li>
+            </a>
+            <a href="#section2">
+              <li>ost</li>
+            </a>
+            <a href="#section3">
+              <li>story1</li>
+            </a>
+            <a href="#section4">
+              <li>story2</li>
+            </a>
+            <a href="#section5">
+              <li>story3</li>
+            </a>
+            <a href="#section6">
+              <li>story4</li>
+            </a>
+            <a href="#section7">
+              <li>story5</li>
+            </a>
+          </ol>
+        </aside>
+        <div class="progressBar">
+          <div class="indicator"></div>
+        </div>
+      </div>
+
+      <div class="section footer">
+        <div class="container">
+          <div
+            class="wrapper"
+            style="max-width: calc(120ch + 30rem)"
+          >
+            <!-- --첫번째칸 -->
+            <div>
+              <img
+                class="logo"
+                src="./img압축/로고.png"
+                alt="지브리로고"
+                style="width: 150px"
+              />
+              <p>제작 : 스튜디오 지브리</p>
+            </div>
+            <!-- --첫번째칸 -->
+            <!-- 두번쨰칸 -->
+
+            <div class="column">
+              <ul>
+                <li>
+                  정식 : 株式会社スタジオジブリ
+                </li>
+                <li>영어 : Studio Ghibli Inc</li>
+                <li>
+                  설립자 : 미야자키 하야오 <br />
+                  타카하타 이사오<br />
+                  스즈키 토시오
+                </li>
+              </ul>
+            </div>
+            <div class="column">
+              <ul>
+                <li>
+                  코가네이시 카지노쵸 1초메 4-25
+                </li>
+                <li>직원수:280명</li>
+                <li>대표자:스즈키 토시오</li>
+                <li>
+                  업종:애니메이션 영화 기획 및
+                  제작업
+                </li>
+              </ul>
+            </div>
+            <!-- 두번쨰칸 -->
+            <div class="column">
+              <ul>
+                <a href="https://www.ghibli.jp/">
+                  <li>홈페이지 바로가기</li>
+                </a>
+                <a
+                  href="https://twitter.com/JP_GHIBLI"
+                >
+                  <li>트위터 바로가기</li>
+                </a>
+                <a
+                  href="https://www.ghibli-museum.jp/"
+                >
+                  <li>뮤지엄 바로가기</li> </a
+                ><a
+                  href="https://www.dotorisup.com/"
+                >
+                  <li>캐릭터샵 바로가기</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
