@@ -97,7 +97,7 @@ body {
   justify-content: center;
 
   h2 {
-    margin-top: 60px;
+    // margin-top: 60px;
     font-size: 32px;
     margin-inline: auto;
     background-color: deepskyblue;
@@ -674,10 +674,7 @@ ul li .a:hover .screen1::after {
   header {
     min-height: max(80dvh, 2rem);
   }
-  .gallerylist {
-    grid-template-columns: 1fr 1fr;
-    row-gap: unset;
-  }
+
   #section1 {
     padding-right: 10px;
   }
@@ -688,6 +685,12 @@ ul li .a:hover .screen1::after {
   }
 }
 
+@media (max-width: 420px) {
+  .gallerylist {
+    grid-template-columns: 1fr 1fr;
+    row-gap: unset;
+  }
+}
 @media (max-width: 431px) {
   #section1 {
     width: 100%;
@@ -712,6 +715,16 @@ ul li .a:hover .screen1::after {
   ul li .a .screen .bottom {
     font-size: 5px;
     left: 10px;
+  }
+}
+@media (max-width: 500px) {
+  ul li .a .screen1::after {
+    height: 97%;
+  }
+}
+@media (max-width: 500px) {
+  ul li .a .screen::after {
+    height: 95%;
   }
 }
 
