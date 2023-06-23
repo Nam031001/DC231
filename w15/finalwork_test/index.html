@@ -74,13 +74,22 @@
           <div class="nav__menu">그랑맘마레</div>
         </div>
         <div class="nav__menuwrapper">
-          <div class="nav__menu button">
-            시청하기
-          </div>
-
-          <div class="nav__menu button">
-            더보기
-          </div>
+          <a
+            href="https://www.netflix.com/kr/title/70106454"
+            style="text-decoration-line: none"
+          >
+            <div class="nav__menu button">
+              시청하기
+            </div>
+          </a>
+          <a
+            href="https://namu.wiki/w/%EB%B2%BC%EB%9E%91%20%EC%9C%84%EC%9D%98%20%ED%8F%AC%EB%87%A8"
+            style="text-decoration-line: none"
+          >
+            <div class="nav__menu button">
+              더보기
+            </div>
+          </a>
         </div>
         <div class="nav__menuwrappe lt680px">
           <div class="nav__menu">menu</div>
@@ -164,7 +173,12 @@
         <main>
           <section id="section1">
             <div class="container"></div>
-            <div class="wrapper">
+            <div
+              class="wrapper"
+              style="
+                max-width: calc(120ch + 2 * 2rem);
+              "
+            >
               <lottie-player
                 src="./asset/repeatTest.json"
                 speed="1"
@@ -179,6 +193,15 @@
               >
               </lottie-player>
               <h2>등장인물</h2>
+              <p
+                style="
+                  margin-inline: auto;
+                  margin-top: 3px;
+                  font-size: 17px;
+                "
+              >
+                커서를 올려보세요!
+              </p>
 
               <div class="gallerylist">
                 <ul>
@@ -358,7 +381,7 @@
                 style="
                   aspect-ratio: 16/9;
                   width: 10%;
-                  margin-top: 40px;
+                  margin-top: 10px;
                   margin-inline: auto;
                 "
                 loop
@@ -401,9 +424,18 @@
                 autoplay
               >
               </lottie-player>
-              <h2 style="margin-bottom: 40px">
+              <h2 style="margin-bottom: 3px">
                 스토리
               </h2>
+              <p
+                style="
+                  margin-inline: auto;
+                  margin-bottom: 40px;
+                  font-size: 17px;
+                "
+              >
+                커서를 올려보세요!
+              </p>
             </div>
             <ul>
               <li>
@@ -687,8 +719,8 @@
             <a href="#section7">
               <li>story5</li>
             </a>
-            <a href="#section8">
-              <li>footer</li>
+            <a href="#section9">
+              <li>TMI</li>
             </a>
           </ol>
         </aside>
@@ -700,7 +732,10 @@
       <div
         class="section footer"
         id="section8"
-        style="margin-bottom: 785px"
+        style="
+          margin-bottom: 
+        /* 785px */ 6.25rem;
+        "
       >
         <div class="container">
           <div
@@ -713,7 +748,6 @@
                 class="logo"
                 src="./img/logo.png"
                 alt="지브리로고"
-                style="width: 150px"
               />
               <p>제작 : 스튜디오 지브리</p>
             </div>
@@ -721,10 +755,7 @@
             <!-- 두번쨰칸 -->
 
             <div class="column">
-              <ul>
-                <li>
-                  정식 : 株式会社スタジオジブリ
-                </li>
+              <ul style="cursor: unset">
                 <li>영어 : Studio Ghibli Inc</li>
                 <li>
                   설립자 : 미야자키 하야오 <br />
@@ -734,7 +765,7 @@
               </ul>
             </div>
             <div class="column">
-              <ul>
+              <ul style="cursor: unset">
                 <li>
                   코가네이시 카지노쵸 1초메 4-25
                 </li>
@@ -771,6 +802,30 @@
           </div>
         </div>
       </div>
+      <section
+        id="section9"
+        style="margin-inline: auto"
+      >
+        <div class="wrapper">
+          <h2>TMI</h2>
+          <p style="font-size: 22px">
+            영화에 나온 포뇨의 치킨라멘은 실제
+            일본에서 판매중인 닛신 치킨라멘이
+            모델이다.
+          </p>
+          <div class="gif">
+            <img
+              src="./img/ramen.gif"
+              alt=""
+              style="
+                width: 100%;
+
+                margin-bottom: 6.25rem;
+              "
+            />
+          </div>
+        </div>
+      </section>
     </header>
   </body>
 </html>

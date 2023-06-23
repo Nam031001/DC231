@@ -1,16 +1,14 @@
 @charset "UTF-8";
 @import url(theme.light.css) (prefers-color-scheme: dark);
 @import url(theme.light.css) (prefers-color-scheme: light);
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&display=swap");
 *,
 *::after,
 *::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "KOTRAHOPE";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
+  font-family: "Cute Font", cursive;
 }
 
 .nav {
@@ -19,6 +17,9 @@
   font-weight: 700;
   container-type: inline-size;
   container-name: nav;
+}
+.nav nav__menu {
+  font-size: 100px;
 }
 .nav .navWrapper {
   padding-inline: 2rem;
@@ -31,6 +32,7 @@
   display: flex;
   gap: 24px;
   align-items: baseline;
+  font-size: 25px;
 }
 .nav .lt680px {
   display: none;
@@ -56,15 +58,15 @@ html {
 body {
   background-color: white;
   margin: 0;
-  font-family: system-ui;
-  font-size: 20px;
+  font-family: "Cute Font", cursive;
+  font-size: 16px;
   line-height: 1.5;
   background-color: var(--bg);
   color: var(--txt);
 }
 
 .wrapper {
-  max-width: calc(80ch + 4rem);
+  max-width: calc(110ch + 4rem);
   margin-inline: auto;
   padding-inline: 2rem;
   display: flex;
@@ -72,7 +74,7 @@ body {
   justify-content: center;
 }
 .wrapper h2 {
-  font-size: 32px;
+  font-size: 37px;
   margin-inline: auto;
   background-color: deepskyblue;
   border-radius: 15px;
@@ -129,7 +131,7 @@ aside {
   width: fit-content;
   height: max(100dvh, 2rem);
   border-radius: 0 1rem 1rem 0;
-  font-size: 1.0625rem;
+  font-size: 22px;
   -webkit-backdrop-filter: blur(0.25rem);
           backdrop-filter: blur(0.25rem);
 }
@@ -340,7 +342,7 @@ ul li {
   width: 50%;
 }
 ul li .a h3 {
-  font-size: 17px;
+  font-size: 22px;
   text-align: center;
   padding: 20px;
   color: black;
@@ -362,7 +364,7 @@ ul ul .a .screen1 .top {
   left: 200px;
   z-index: 2;
   color: #fff;
-  font-size: 26px;
+  font-size: 31px;
   font-weight: 900;
   transition: all 0.35s;
 }
@@ -372,7 +374,7 @@ ul ul .a .screen1 .bottom {
   left: 200px;
   z-index: 2;
   color: #fff;
-  font-size: 20px;
+  font-size: 31px;
   transition: all 0.35s;
 }
 ul ul .a .screen1::after {
@@ -410,7 +412,7 @@ ul .a .screen .top {
   left: 30px;
   z-index: 2;
   color: #fff;
-  font-size: 27px;
+  font-size: 32px;
   font-weight: 900;
   transition: all 0.35s;
 }
@@ -420,7 +422,7 @@ ul .a .screen .bottom {
   left: 30px;
   z-index: 2;
   color: #fff;
-  font-size: 15px;
+  font-size: 18px;
   transition: all 0.35s;
 }
 ul .a .screen::after {
@@ -452,7 +454,7 @@ ul .a .screen1 .top {
   left: 200px;
   z-index: 2;
   color: #fff;
-  font-size: 26px;
+  font-size: 31px;
   font-weight: 900;
   transition: all 0.35s;
 }
@@ -462,7 +464,7 @@ ul .a .screen1 .bottom {
   left: 200px;
   z-index: 2;
   color: #fff;
-  font-size: 20px;
+  font-size: 25px;
   transition: all 0.35s;
 }
 ul .a .screen1::after {
@@ -504,7 +506,7 @@ ul li .a:hover .screen1::after {
   margin-inline: auto;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1rem;
+  font-size: 21px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -522,7 +524,7 @@ ul li .a:hover .screen1::after {
 .footerText h2 {
   margin-top: 0.25rem;
   margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 21px;
 }
 .footerText li {
   margin-bottom: 0.5rem;
@@ -536,12 +538,16 @@ ul li .a:hover .screen1::after {
   min-height: max(100dvh, 2rem);
 }
 
+.logo {
+  width: 45%;
+}
+
 .footer {
   background-color: var(--bgVariant);
   padding-block: 30px;
   container-type: inline-size;
   container-name: footer;
-  font-size: 17px;
+  font-size: 20px;
 }
 .footer .wrapper {
   display: grid;
@@ -562,7 +568,7 @@ ul li .a:hover .screen1::after {
 .footer h2 {
   margin-top: 0.25rem;
   margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 21px;
 }
 .footer li {
   margin-bottom: 0.5rem;
@@ -616,6 +622,9 @@ ul li .a:hover .screen1::after {
     grid-template-columns: 1fr 1fr;
     row-gap: unset;
   }
+  .footer {
+    font-size: 15px;
+  }
 }
 @media (max-width: 431px) {
   #section1 {
@@ -637,7 +646,7 @@ ul li .a:hover .screen1::after {
 }
 @media (max-width: 560px) {
   ul li .a .screen .bottom {
-    font-size: 5px;
+    font-size: 10px;
     left: 10px;
   }
 }
@@ -653,7 +662,7 @@ ul li .a:hover .screen1::after {
 }
 @media (max-width: 780px) {
   ul li .a .screen1 .top {
-    font-size: 18px;
+    font-size: 23px;
     left: 10%;
   }
   ul li .a:hover .top {
@@ -667,29 +676,63 @@ ul li .a:hover .screen1::after {
     top: 32%;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 768px) {
+  ul li .a .screen1::after {
+    height: 97.8%;
+  }
+}
+@media (max-width: 1024px) {
+  ul li .a .screen1::after {
+    height: 98.4%;
+  }
+}
+@media (max-width: 1000px) {
   ul li .a .screen1 .top {
-    font-size: 15px;
+    font-size: 23px;
     left: 10%;
   }
   ul li .a:hover .top {
     bottom: 72%;
   }
   ul li .a .screen1 .bottom {
-    font-size: 9px;
+    font-size: 16px;
+    left: 10%;
+  }
+  ul li .a:hover .bottom {
+    top: 32%;
+  }
+}
+@media (max-width: 550px) {
+  ul li .a .screen1 .top {
+    font-size: 20px;
+    left: 10%;
+  }
+  ul li .a .screen1::after {
+    height: 97.3%;
+  }
+  ul li .a:hover .top {
+    bottom: 72%;
+  }
+  ul li .a .screen1 .bottom {
+    font-size: 10px;
     left: 10%;
   }
   ul li .a:hover .bottom {
     top: 32%;
   }
   .wrapper h2 {
-    font-size: 20px;
+    font-size: 25px;
+  }
+}
+@media (max-width: 425px) {
+  ul li .a .screen1::after {
+    height: 96%;
   }
 }
 .button {
   cursor: pointer;
   padding: 0.7rem 1rem;
-  font-size: 19px;
+  font-size: 24px;
   line-height: 0.875rem;
   font-weight: bold;
   background-color: deepskyblue;
