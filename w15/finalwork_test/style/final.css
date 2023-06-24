@@ -538,6 +538,17 @@ ul li .a:hover .screen1::after {
   min-height: max(100dvh, 2rem);
 }
 
+.tmi {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+@media (max-width: 420px) {
+  .tmi {
+    font-size: 15px;
+  }
+}
+
 .logo {
   width: 45%;
 }
